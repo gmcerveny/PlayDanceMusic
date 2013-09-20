@@ -9,3 +9,6 @@ div.jumbotron {
 .djmix {
     background-image:url('../img/dj-deck.jpg');
 }
+.navbar-default .navbar-nav > li > a.success {
+    color: #18bc9c;
+}
