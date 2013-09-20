@@ -13,8 +13,11 @@ div.headline {
     background-color: rgba(9,9,9,.5);
     padding:0px 25px;
 }
-.well.success {
+.well.info {
     background-color: #3498db;
+}
+.well.success {
+    background-color:#18bc9c;
 }
 .well p {
     font-size:18px;
