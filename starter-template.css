@@ -5,3 +5,11 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+div.jumbotron {
+    background-image:url('img/dj-deck.jpg');
+    padding-top: 10px;
+    height: 330px;
+}
+.djmix {
+    background-image:url('img/dj-deck.jpg');
+}
