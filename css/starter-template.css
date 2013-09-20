@@ -2,12 +2,16 @@ body {
   padding-top: 10px;
 }
 div.jumbotron {
-    background-image:url('../img/dj-deck.jpg');
+    background-image:url('../img/dj-deck-fullcolor.jpg');
     padding-top: 10px;
     height: 330px;
 }
-.djmix {
-    background-image:url('../img/dj-deck.jpg');
+div.jumbotron h1, div.jumbotron p {
+    color: #eee;
+}
+div.headline {
+    background-color: rgba(9,9,9,.5);
+    padding:0px 25px;
 }
 .navbar-default .navbar-nav > li > a.success {
     color: #18bc9c;
