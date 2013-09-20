@@ -1,0 +1,11 @@
+body {
+  padding-top: 10px;
+}
+div.jumbotron {
+    background-image:url('../img/dj-deck.jpg');
+    padding-top: 10px;
+    height: 330px;
+}
+.djmix {
+    background-image:url('../img/dj-deck.jpg');
+}
