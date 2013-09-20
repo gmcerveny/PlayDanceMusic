@@ -19,3 +19,19 @@ div.headline {
 .navbar-default .navbar-nav > li > a.success {
     color: #18bc9c;
 }
+.chiclet {
+    padding-top: 18px;
+}
+
+.subscribers {
+    padding: 5px 24px 5px 1px;
+    background-color: #FBAEBD;
+    font-weight: bold;
+}
+
+.subscribers .count {
+    margin: 0;
+    padding: 4px 12px;
+    color: #fff;
+    background-color: #ED1A4B;
+}
