@@ -13,25 +13,16 @@ div.headline {
     background-color: rgba(9,9,9,.5);
     padding:0px 25px;
 }
-.well {
+.well.success {
     background-color: #3498db;
+}
+.well p {
+    font-size:18px;
 }
 .navbar-default .navbar-nav > li > a.success {
     color: #18bc9c;
 }
-.chiclet {
-    padding-top: 18px;
-}
-
-.subscribers {
-    padding: 5px 24px 5px 1px;
-    background-color: #FBAEBD;
-    font-weight: bold;
-}
-
-.subscribers .count {
-    margin: 0;
-    padding: 4px 12px;
-    color: #fff;
-    background-color: #ED1A4B;
+.count {
+    font-size: 26px;
+    font-weight: 700;
 }
