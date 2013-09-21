@@ -13,8 +13,10 @@ div.headline {
     background-color: rgba(9,9,9,.5);
     padding:0px 25px;
 }
+div.socialproof {
+}
 .well.info {
-    background-color: #3498db;
+    background-color: rgba(52, 152, 219, .2);
 }
 .well.success {
     background-color:#18bc9c;
@@ -28,4 +30,14 @@ div.headline {
 .count {
     font-size: 26px;
     font-weight: 700;
+}
+@media (min-width: 768px){
+    #wrap > div.container#content {
+        padding-top:120px;
+    }
+}
+@media (min-width: 992px){
+    #wrap > div.container#content {
+        padding-top:60px;
+    }
 }
