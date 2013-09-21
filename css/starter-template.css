@@ -3,8 +3,9 @@ body {
 }
 div.jumbotron {
     background-image:url('../img/dj-deck-fullcolor.jpg');
+    background-repeat:no-repeat;
     padding-top: 10px;
-    height: 330px;
+    min-height: 330px;
 }
 div.jumbotron h1, div.jumbotron p {
     color: #eee;
@@ -31,6 +32,7 @@ div.socialproof {
     font-size: 26px;
     font-weight: 700;
 }
+
 @media (min-width: 768px){
     #wrap > div.container#content {
         padding-top:120px;
