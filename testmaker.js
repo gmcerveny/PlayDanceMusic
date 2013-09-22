@@ -2,11 +2,8 @@ var ejs = require('ejs'),
   fs = require('fs');
 
 var template_name = 'index';
-
 var tests = ['no_price', 'premium', 'ultra'];
-
 var template_path = path.resolve(template_name + '.ejs');
-
 
 function renderTests() {   
     tests.forEach( function(test) {
