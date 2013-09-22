@@ -17,7 +17,7 @@ function renderTests() {
 
 function renderControl() {
     output_path = path.resolve('.', template_name + '.html');
-    renderTest(template_path, {}, output_path);
+    renderTest(template_path, {control: true}, output_path);
 }
 
 function renderTest(template_path, options, output_path) {
