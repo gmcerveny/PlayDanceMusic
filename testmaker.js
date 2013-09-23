@@ -17,10 +17,10 @@ function renderTests() {
 
 function renderControl() {
     output_path = path.resolve('.', template_name + '.html');
-    renderTest(template_path, {control: true}, output_path);
+    renderTemplate(template_path, {control: true}, output_path);
 }
 
-function renderTest(template_path, options, output_path) {
+function renderTemplate(template_path, options, output_path) {
     ejs.renderFile(template_path, options, 
                    function(err, str) {
                        if (err) throw err;
@@ -30,4 +30,12 @@ function renderTest(template_path, options, output_path) {
                                         console.log( path.basename(output_path) + ' written');
                                     });
                    });
+}
+
+function quickRender(quick_template, options) {
+    var basename = path.basename(quick_template, '.ejs');
+    var quick_template_path = path.resolve('.', basename + '.ejs');
+    var quick_output_path = path.resolve('.', basename + '.html');
+    options = options || {};
+    renderTemplate(quick_template_path, options, quick_output_path);
 }
