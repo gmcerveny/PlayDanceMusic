@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/boostrap/assets/ico/favicon.png">
+
+    <title><%- locals.title %></title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/bootstrap/assets/js/html5shiv.js"></script>
+      <script src="/bootstrap/assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <div id="wrap">
+
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Play Dance Music</h3>
+      </div>
+
+      <div class="jumbotron">
+        <img src="<%- locals.hero_image || 'grad_turntable.png' %>" class="img-rounded pull-right hero"/>
+        
+        <%- locals.content %>
+
+        <div class="cta">
+          <form action="http://twitter.us2.list-manage.com/subscribe/post?u=50350daf6a7910bab56d83f95&amp;id=fc9a9c1330" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+            <input type="hidden" name="group[15269][8]" value="1">
+            <div class="form-group">
+              <input type="email" name="EMAIL" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-lg btn-success">
+              <span class="glyphicon glyphicon-envelope"></span> Get a Free Issue TODAY</button>
+          </form>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+  </div>
+
+<div id="footer">
+  <div class="container">
+<p class="text-muted credit">
+      <strong>Play Dance Music</strong> | 112 E Pecan St Ste 1100 | San Antonio, TX | (303) 810-7068
+</p>
+  </div>
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>

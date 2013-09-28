@@ -1,5 +1,7 @@
 var ejs = require('ejs'),
-  fs = require('fs');
+  fs = require('fs'),
+  yamlFM = require('yaml-front-matter'),
+  namp = require('namp');
 
 var template_name = 'index';
 var tests = ['no_price', 'premium', 'ultra'];
@@ -38,4 +40,15 @@ function quickRender(quick_template, options) {
     var quick_output_path = path.resolve('.', basename + '.html');
     options = options || {};
     renderTemplate(quick_template_path, options, quick_output_path);
+}
+
+function renderLanding(file_name) {
+    var landing = yamlFM.loadFront(file_name);
+    console.log(landing);
+    landing.slug = landing.title.split(' ').join('_');
+    landing.content = namp(landing.__content).html;
+    delete landing.__content;
+    template_path = path.resolve('landing.ejs');
+    output_path = path.resolve('.', landing.slug + '.html');
+    renderTemplate(template_path, landing, output_path);
 }
