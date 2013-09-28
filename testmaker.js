@@ -42,13 +42,39 @@ function quickRender(quick_template, options) {
     renderTemplate(quick_template_path, options, quick_output_path);
 }
 
+function getSlug(title, modifier) {
+    var modifier = modifier || '';
+    if (modifier.length > 0)
+        var slug = title + ' ' + modifier;
+    slug = slug.split(' ').join('_');
+    return slug
+}
+
 function renderLanding(file_name) {
     var landing = yamlFM.loadFront(file_name);
-    console.log(landing);
-    landing.slug = landing.title.split(' ').join('_');
+    landing.slug = getSlug(landing.title);
     landing.content = namp(landing.__content).html;
     delete landing.__content;
     template_path = path.resolve('landing.ejs');
     output_path = path.resolve('.', landing.slug + '.html');
     renderTemplate(template_path, landing, output_path);
+}
+
+function generateOptions(base_name) {
+    var options = ['legs-and-glitterball',
+                   'rosy-booty',
+                   'turntable-speakers',
+                   'vinyl-stack'];
+
+    var landing = yamlFM.loadFront(base_name);
+    landing.content = namp(landing.__content).html;
+    delete landing.__content;
+
+    options.forEach( function(photo) {
+        landing.slug = getSlug(landing.title, photo);
+        landing.hero_image = photo + '.jpg';
+        template_path = path.resolve('landing.ejs');
+        output_path = path.resolve('.', landing.slug + '.html');
+        renderTemplate(template_path, landing, output_path);
+    });
 }

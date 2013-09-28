@@ -1,5 +1,6 @@
 ---
 title: Featured DJ Andy Reed
+hero_image: vinyl-stack.jpg
 ---
 # Andy Reed <small>Featured Member</small>
 
