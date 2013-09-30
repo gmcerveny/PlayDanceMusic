@@ -44,8 +44,9 @@ function quickRender(quick_template, options) {
 
 function getSlug(title, modifier) {
     var modifier = modifier || '';
+    var slug = title;
     if (modifier.length > 0)
-        var slug = title + ' ' + modifier;
+         slug += ' ' + modifier;
     slug = slug.split(' ').join('_');
     return slug
 }
