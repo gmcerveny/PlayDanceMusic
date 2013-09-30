@@ -2,6 +2,8 @@
 title: Featured Artist James Dexter
 hero_image: turntable-speakers.jpg
 mailchimp_group: group[15341][32]
+fb_image: issues/002/James_Dexter-2_Free_Tracks~50x50.jpg
+description: 2 Free Tracks from James Dexter
 ---
 # James Dexter <br/><small>Featured Artist</small>
 
