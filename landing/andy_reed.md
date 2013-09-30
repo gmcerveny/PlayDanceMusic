@@ -2,6 +2,8 @@
 title: Featured DJ Andy Reed
 hero_image: legs-and-glitterball.jpg
 mailchimp_group: group[15341][64]
+fb_image: /issues/002/AndyReed~200x200.jpg
+description: Electro House DJ Andy Reed
 ---
 # Andy Reed <small>Featured Member</small>
 
