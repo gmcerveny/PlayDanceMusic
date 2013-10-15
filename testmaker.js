@@ -3,12 +3,13 @@ var ejs = require('ejs'),
   yamlFM = require('yaml-front-matter'),
   namp = require('namp');
 
-function quickRender(quick_template, options) {
-    var basename = path.basename(quick_template, '.ejs');
-    var quick_template_path = path.resolve('.', basename + '.ejs');
-    var quick_output_path = path.resolve('.', basename + '.html');
+function quickRender(template, options, out_name) {
+    var basename = path.basename(template, '.ejs');
+    var template_path = path.resolve('.', basename + '.ejs');
+    out_name = out_name || basename;
+    var out_path = path.resolve('.', output + '.html');
     options = options || {};
-    renderTemplate(quick_template_path, options, quick_output_path);
+    renderTemplate(template_path, options, out_path);
 }
 
 function renderTemplate(template_path, options, output_path) {
@@ -23,15 +24,6 @@ function renderTemplate(template_path, options, output_path) {
                    });
 }
 
-function getSlug(title, modifier) {
-    var modifier = modifier || '';
-    var slug = title;
-    if (modifier.length > 0)
-         slug += ' ' + modifier;
-    slug = slug.split(' ').join('_');
-    return slug
-}
-
 function renderLanding(file_name) {
     var landing = yamlFM.loadFront(file_name);
     landing.slug = getSlug(landing.title);
@@ -40,6 +32,15 @@ function renderLanding(file_name) {
     template_path = path.resolve('landing.ejs');
     output_path = path.resolve('.', landing.slug + '.html');
     renderTemplate(template_path, landing, output_path);
+}
+
+function getSlug(title, modifier) {
+    var modifier = modifier || '';
+    var slug = title;
+    if (modifier.length > 0)
+         slug += ' ' + modifier;
+    slug = slug.split(' ').join('_');
+    return slug
 }
 
 function generateOptions(base_name) {
