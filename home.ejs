@@ -1,0 +1,42 @@
+<% include head %>
+
+<div class="container" id="content">
+  <div class="jumbotron">
+    <div class="container headline">
+      <h1><%- locals.headline %></h1>
+      <p><%- locals.tagline %></p>
+    </div>
+    <p style="padding-top:40px;">
+      <a class="btn btn-lg btn-success" href="#signup"><%- locals.cta %></a>
+    </p>
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-8">
+
+      <div class="row">
+        <div class="col-lg-12">
+          <%- locals.content %>
+        </div>
+
+        <div class="well success">
+            <h3><%- sub_tagline %></h3>
+            <a href="https://app.moonclerk.com/pay/698xkd1ep" class="btn btn-lg btn-warning">
+              <%- locals.cta %>
+            </a>
+        </div>
+
+        <% include personal %>
+
+      </div>
+    </div>
+
+    <% include testimonials %>
+
+  </div>
+
+
+</div><!-- /.container -->
+
+<% include foot %>

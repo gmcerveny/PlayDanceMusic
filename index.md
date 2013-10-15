@@ -1,10 +1,10 @@
 ---
+template: home
 title: Play Dance Music
 headline: Dance Music in Your Email
 tagline: A monthly email with some great hand picked tracks to spin and mix.
 cta: Get a Free Issue Now
-sub_tagline: All for just $36 / year.<br/>That's only $3 per month.
-test: control
+sub_tagline: All for just $36 / year. That's only $3 per month.
 ---
 
 ### You Play Dance Music
