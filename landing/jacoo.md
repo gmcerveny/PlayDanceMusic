@@ -2,15 +2,13 @@
 title: Featured Artist Jacoo
 hero_image: turntable-speakers.jpg
 mailchimp_group: group[15341][16384]
-fb_image: /issues/002/James_Dexter-2_Free_Tracks~200x200.jpg
-description: 2 Free Tracks from James Dexter
+fb_image: /issues/003/Jacoo-Panama~200x200.jpg
+description: FREE ChillStep Download Jacoo - Panama
 ---
-# James Dexter <br/><small>Featured Artist</small>
+# Jacoo<br/><small>Featured Artist</small>
 
-![James Dexter - 2 Free Tracks](/issues/002/James_Dexter-2_Free_Tracks.jpg)
+![Jacoo Panama](/issues/003/Jacoo-Panama~200x200.jpg)
 
-James Dexter is a veteran deep house DJ and producer with releases on Lost My Dog Records, Large Music, Om Records, Salted Music, Beef Records, and Nervous Records. 
+[Panama](http://heroicrecordings.bandcamp.com/track/panama) is a Heroic Recordings release from 17 year old Norwegian producer Jacoo.  [Heroic Recordings](http://www.heroicrecordings.com) is an upstart label with a lot of great tracks, so make sure and check out their other releases.
 
-He shows his fans some love with this free release: [2 Free Tracks](https://soundcloud.com/jamesdexter/sets/james-dexter-2-free-tracks).
-
-Check him out and __four great deep house downloads__ from producers Lee Foss, Chronophone, and The Magician in a FREE issue.
+Get the FREE ISSUE featuring Albzzy and  __FIVE AWESOME CHILLSTEP DOWNLOADS__ from artists like Jacoo, Electus, Azedia, Trifonic, and SizzleBird.  
