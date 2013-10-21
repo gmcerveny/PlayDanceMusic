@@ -39,7 +39,7 @@ function renderTemplate(template_path, options, output_path) {
 
 function renderLanding(file_name) {
     var landing = yamlFM.loadFront(file_name);
-    landing.slug = getSlug(landing.title);
+    landing.slug = landing.filename ? landing.filename : getSlug(landing.title);
     landing.content = namp(landing.__content).html;
     delete landing.__content;
     var template = landing.template ? landing.template + '.ejs' : 'landing.ejs';
