@@ -2,7 +2,7 @@
 title: ChillStep Podcast
 heading: ChillStep Podcast <small>Issue 03</small>
 hero_image: vinyl-stack.jpg
-mailchimp_group: group[15341][64]
+mailchimp_group: group[15341][4096]
 fb_image: /img/sticker~200x200.png
 description: Play Dance Music - ChillStep Podcast - Issue 03 mixed by Greg Cerveny
 template: podcast
