@@ -3,7 +3,7 @@ title: Dance Music Email List
 filename: new_subscriber
 hero_image: vinyl-stack.jpg
 fb_image: /img/turntable.png
-description: Hand picked dance music ready to DJ and remix sent to your email.
+description: About once a month I'll send you an email with some hand-picked downloadable tracks to spin and mix.
 cta: Sign Up Now
 destination: https://app.moonclerk.com/pay/1gdvic5zusu
 template: signup
