@@ -42,8 +42,9 @@ function renderLanding(file_name) {
     landing.slug = getSlug(landing.title);
     landing.content = namp(landing.__content).html;
     delete landing.__content;
-    template_path = path.resolve('landing.ejs');
-    output_path = path.resolve('.', landing.slug + '.html');
+    var template = landing.template ? landing.template + '.ejs' : 'landing.ejs';
+    var template_path = path.resolve(template);
+    var output_path = path.resolve('.', landing.slug + '.html');
     renderTemplate(template_path, landing, output_path);
 }
 
