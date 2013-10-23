@@ -26,11 +26,15 @@
 
     <style>
       html {
-        background:url('/landing/big_turntable_dj.jpg') no-repeat center center;
+        background: #000 url('/landing/big_turntable_dj.jpg') no-repeat center center;
         background-size:cover;
       }
       body {
-        background-color:inherit;
+        background:inherit;
+      }
+      .container .jumbotron {
+        background-color: rgba(236, 240, 241,.8);
+        min-height: 0px;
       }
     </style>
 
@@ -61,8 +65,6 @@
       </div>
 
       <div class="jumbotron">
-        <img src="vinyl-stack.jpg" class="img-rounded pull-right hero"/>
-        
         <h1>The Best Dance Tracks for the Best DJs</h1>
 <p>Get <strong>OVER 100 DOPE DANCE TRACKS</strong> sent to your e-mail for <strong>ONLY $1</strong></p>
 <p>How??? </p>
@@ -76,8 +78,9 @@
         </div>
       </div>
 
-      <p class="text-center text-muted">
-<strong>Personal Policy:</strong> 
+      <p class="text-center text-muted"
+         style="background-color:rgba(32,32,32,.8); padding:10px;">
+        <strong>Personal Policy:</strong> 
                 Being real is important to me.  That's why I'll never spam you or sell your e-mail address.
                 If you get your first issue and you don't think I'm doing a good job supporting our community, 
                 email me
