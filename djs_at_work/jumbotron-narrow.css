@@ -69,11 +69,12 @@ body {
 .container .jumbotron {
   text-align: left;
   border-bottom: 1px solid #e5e5e5;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 50px 20px;
   min-height: 480px;
 }
 .jumbotron h1 {
   padding-top: 20px;
+  white-space:nowrap;
 }
 .jumbotron .btn {
   font-size: 21px;
@@ -111,6 +112,10 @@ body {
   margin-top: 28px;
 }
 
+.stores img:first-child {
+  margin-top: 20px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
@@ -127,7 +132,7 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .container .jumbotron {
     border-bottom: 0;
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 50px 20px;
   }
   .jumbotron h1 {
       font-size: 39px;
@@ -138,7 +143,10 @@ body {
   .lead {
       font-size: 17.25px;
   }
-.jumbotron div.cta {
-    width:400px;
-}
+  .jumbotron div.cta {
+      width:400px;
+  }
+  .stores img:first-child {
+      margin-top: 70px;
+  }
 }
