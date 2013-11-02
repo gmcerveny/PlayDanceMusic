@@ -120,6 +120,10 @@ body {
   white-space:normal;
 }
 
+.ebook {
+  margin-top:20px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
@@ -149,8 +153,5 @@ body {
   }
   .jumbotron div.cta {
       width:400px;
-  }
-  .stores img:first-child {
-      margin-top: 70px;
   }
 }
