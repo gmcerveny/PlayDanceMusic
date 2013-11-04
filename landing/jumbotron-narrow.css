@@ -91,6 +91,14 @@ body {
 .jumbotron div.cta {
     padding:15px 20px 8px 0px;
 }
+.jumbotron ul {
+    padding-top:15px;
+    padding-bottom:15px;
+}
+.jumbotron ul li {
+    font-size: 17.25px;
+    line-height: 1.7em;
+}
 
 
 
